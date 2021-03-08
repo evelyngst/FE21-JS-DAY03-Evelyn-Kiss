@@ -2,19 +2,19 @@ var degrees = Math.floor(Math.random() * 40 ) -5;
 console.log(degrees);
 if (degrees <= 10) {
     document.getElementById("temp").innerHTML = "The weather is cold";
-    document.querySelector(".images")[0];
+    document.getElementById("cold").style.display = "block";
 } else {
     if (degrees > 10 && degrees <= 20) {
         document.getElementById("temp").innerHTML = "The weather is moderate";
-        document.getElementsByClassName("images")[1];
+        document.getElementById("moderate").style.display = "block";
     } else {
         if (degrees > 20 && degrees <= 30) {
             document.getElementById("temp").innerHTML = "The weather is nice";
-            document.getElementsByClassName("images")[2];
+            document.getElementById("nice").style.display = "block";
         } else {
             // degrees > 30;
             document.getElementById("temp").innerHTML = "The weather is hot";
-            document.getElementsByClassName("images")[3];
+            document.getElementById("hot").style.display = "block";
         }
     }
     
