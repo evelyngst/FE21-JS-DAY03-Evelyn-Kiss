@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic ex 3 - Temperature v2.0 </title>
+    <style>
+        .images {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <p class="hot">Hello</p>
+    <p id="temp">Hello</p>
+    <!-- <select name="imageSelector" onChange="displayImage(this.value)">
+        <option value="noImage">Select an Animal</option>
+        <option value="img/cold.jpg">Cold</option>
+        <option value="img/moderate.jpg">Moderate</option>
+        <option value="img/nice.jpg">Nice</option>
+        <option value="img/hot.jpg">Hot</option>
+    </select> -->
+
+    <img class="images" src="/basic_exercise_3/img/cold.jpg" alt="cold">
+    <img class="images" src="img/moderate.jpg" alt="moderate">
+    <img class="images" src="img/nice.jpg" alt="nice">
+    <img class="images" src="img/hot.jpg" alt="hot">
+
     <script src="script.js"></script>
 </body>
 </html>
