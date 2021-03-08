@@ -5,17 +5,18 @@
 
 
 var studentName = ["Martin", "Thomas", "Klaus", "Maria", "David"];
-var studentGrade = ["76", "85", "65", "93", "81"];
+var studentGrade = [76, 85, 65, 93, 81];
 var output = "";
+var average = 0;
 
 for (let i in studentName) {
     output += "The students name is " + studentName[i] + "<br>";
     output += "The average is " +studentGrade[i] + "<br>";
-    
-
+    average += studentGrade[i];
 
     if (studentGrade[i] < 60) {
         output += "The grade is F <br> <br>";
+        
         // document.getElementById("outputGrade").innerHTML += "The grade is F <br>";
         // document.getElementById("cold").style.display = "block";
     } else {
@@ -48,6 +49,7 @@ for (let i in studentName) {
     document.getElementById("outputGrade").innerHTML = output;
 
 }
+document.getElementById("outputGrade").innerHTML += "The class average is " + average / studentGrade.length;
 
 // var text = "";
 //   text += "The index is " + i + "<br>";
